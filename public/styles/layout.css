@@ -1,25 +1,26 @@
-/*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
- */
 html {
   box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: #cddeeb;
+  background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
-
 body {
-  color: #545149;
-  background-color: #f4f1ec;
-  font-size: 24px;
+  font-family: "Source Sans Pro";
+  color: black;
+  font-size: 30px;
+  margin: 0;
+  background-color: #cddeeb;
+  background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+ main {
+  border-radius: 12px;
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  padding: 1.0em;
+ }

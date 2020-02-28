@@ -1,0 +1,62 @@
+article {
+  font-size: 50px;
+  border: 2px solid black;
+  padding: 0.5em;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+article header img {
+    /* border: 5px solid yellow; */
+    height: 50px;
+    width: 50px;
+}
+
+article header {
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.handle {
+  display: none;
+}
+article:hover .handle {
+  display: block;
+  opacity: 0.2;
+  margin-top: 25px;
+  margin-right: 60px;
+  font-size: 36px;
+  font-weight: 900;
+  float: right;
+}
+
+.date {
+  font-size: 15px;
+  float: left;
+}
+.tweet-buttons {
+  display: none;
+}
+article:hover .tweet-buttons {
+  display: block;
+  font-size: 15px;
+  float: right;
+}
+
+article:hover {
+  text-shadow: 2px 8px 15px #000000;
+  box-shadow: 2px 8px 15px #000000;
+}
+
+article footer {
+  border-top: 5px solid black;
+  padding: 0.2em;
+  margin-bottom: 15px;
+}
+
+.tweet-body {
+  margin-top: 25px;
+  font-size: 23px;
+  font-style: italic;
+}

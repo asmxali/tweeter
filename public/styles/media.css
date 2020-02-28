@@ -1,0 +1,16 @@
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
+.page-header {
+  width:30%;
+  margin-top: 160px;
+  float:left;
+  position:fixed;
+} 
+main {
+border-radius: 10px;
+margin-top: 120px;
+float:right;
+width:60%;
+margin-right: 15px;
+}
+}

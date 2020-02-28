@@ -1,0 +1,57 @@
+.page-header {
+  height: 400px;
+  width: inherit;
+  margin-top: 110px;
+  background-color: black;
+  background-color: #cddeeb;
+  background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
+}
+
+div {
+  height: 200px;
+  margin: auto;
+  padding: 1.5em;
+  text-align: center;
+  font-family: "Bungee";
+}
+
+.box {
+  position: fixed;
+  top: 63px;
+  right: 100px; 
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  font-style: bold;
+  font-size: 19px;
+  color: black;
+}
+
+.bounce-2 {
+  animation-name: bounce-2;
+  padding: 10px;
+  height: 10px;
+  animation-timing-function: ease;
+}
+@keyframes bounce-2 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+.scroll-up {
+  position: fixed;
+  top: 15px;
+  right: 20px; 
+  height: 10px;
+  font-style: bold;
+  font-size: 15px;
+  color: black;
+}
+a {
+  color: black;
+  text-decoration:none;
+  padding: 10px;
+}
+a:hover {
+  cursor: pointer;
+}

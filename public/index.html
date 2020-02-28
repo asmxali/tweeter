@@ -7,23 +7,65 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
 
+        <!-- RESPONSIVE DESIGN -->
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/media.css" type="text/css" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,600,600i&display=swap" rel="stylesheet">
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src=“https://kit.fontawesome.com/eeb0795f29.js” crossorigin=“anonymous”></script>
+
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <span id="logo">tweeter</span>
+      <div class = "scroll-up"> Write a New Tweet</div>
+          <div class="box bounce-2">  
+          <a id="#toggle-button"> &#8681 </a>
+        </div>
     </nav>
-
+    <header id ="page-header" class = "page-header">
+      <div>
+          <img src="/images/circle-cropped.png"> 
+      </div>
+      <br>
+      <div>
+          <h2>@Boo</h2>
+      </div>
+  </header>
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main id="container" class="container">
+      <section class="new-tweet">
+        <a class= "error-message"></a>
+        <!-- <h2>Compose Tweet</h2> -->
+        <form  id = "tweet-button" action = "/tweets/" method = "POST" >
+          <textarea  name="text" placeholder="What are you humming about?"></textarea>
+          <input class= "button" type="submit" value="Tweet">
+          <span class="counter">140</span>
+        </form>
+      </section>
+      <section id= "tweets-container">
+      </section>
+    </main>
   </body>
 </html>

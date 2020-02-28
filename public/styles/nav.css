@@ -1,0 +1,18 @@
+nav {
+  /* border: 5px solid yellow; */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 110px;
+  width: 100vw;
+  z-index: 1;
+  background-color: #ffffff;
+  color: black;
+  padding: 0.9em;
+  font-size: 34px;
+}
+nav span {
+  /* border: 5px solid green; */
+  font-family: "Bungee";
+
+}
