@@ -38,7 +38,7 @@ const createTweetElement = function(tweetData) {
   </header>
   <span class = "tweet-body"> ${escape(tweetData.content.text)} </span> 
   <footer>
-  <a class="date"> 10 days ago</a>
+  <a class="date"> 2 days ago</a>
   <a class= "tweet-buttons"> 
   <i class="material-icons">favorite</i>
   <i class="material-icons">replay</i>
